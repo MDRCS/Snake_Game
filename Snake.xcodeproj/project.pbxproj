@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FDDB9885208BE40400C74304 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDDB9884208BE40400C74304 /* main.cpp */; };
+		FDDB988D208BE64600C74304 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDB988C208BE64600C74304 /* Cocoa.framework */; };
+		FDDB988F208BE64D00C74304 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDB988E208BE64D00C74304 /* OpenGL.framework */; };
+		FDDB9891208BE65200C74304 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDB9890208BE65200C74304 /* GLUT.framework */; };
+		FDDB9899208C001800C74304 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDDB9897208C001800C74304 /* Game.cpp */; };
+		FDDB989B208C226E00C74304 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDB989A208C226E00C74304 /* GLKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,12 @@
 /* Begin PBXFileReference section */
 		FDDB9881208BE40400C74304 /* Snake */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Snake; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDB9884208BE40400C74304 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FDDB988C208BE64600C74304 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FDDB988E208BE64D00C74304 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		FDDB9890208BE65200C74304 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		FDDB9897208C001800C74304 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		FDDB9898208C001800C74304 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		FDDB989A208C226E00C74304 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDB989B208C226E00C74304 /* GLKit.framework in Frameworks */,
+				FDDB9891208BE65200C74304 /* GLUT.framework in Frameworks */,
+				FDDB988F208BE64D00C74304 /* OpenGL.framework in Frameworks */,
+				FDDB988D208BE64600C74304 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +58,7 @@
 			children = (
 				FDDB9883208BE40400C74304 /* Snake */,
 				FDDB9882208BE40400C74304 /* Products */,
+				FDDB988B208BE64600C74304 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +74,21 @@
 			isa = PBXGroup;
 			children = (
 				FDDB9884208BE40400C74304 /* main.cpp */,
+				FDDB9897208C001800C74304 /* Game.cpp */,
+				FDDB9898208C001800C74304 /* Game.hpp */,
 			);
 			path = Snake;
+			sourceTree = "<group>";
+		};
+		FDDB988B208BE64600C74304 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDDB989A208C226E00C74304 /* GLKit.framework */,
+				FDDB9890208BE65200C74304 /* GLUT.framework */,
+				FDDB988E208BE64D00C74304 /* OpenGL.framework */,
+				FDDB988C208BE64600C74304 /* Cocoa.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDDB9885208BE40400C74304 /* main.cpp in Sources */,
+				FDDB9899208C001800C74304 /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
